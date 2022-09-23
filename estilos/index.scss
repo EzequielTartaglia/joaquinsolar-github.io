@@ -1,3 +1,31 @@
+.divFinalDeCompra{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    #h1{
+        color: brown;
+        margin-top: 1em;
+        padding: 2em;
+    }
+    #parrafoC{
+        background-color: black;
+        color: aliceblue;
+        border-radius: 1em;
+        padding: 1em;
+    }
+
+    #parrafoTotal{
+        background-color: brown;
+        color: black;
+        font-size: 28px;
+        font-weight: bold;
+        padding: 1em;
+        border-radius: 2em;
+    }
+}
+
+
 .divH1{
     display: flex;
     justify-content: center;
@@ -40,3 +68,4 @@
         border-radius: 2em;
     }
 }
+

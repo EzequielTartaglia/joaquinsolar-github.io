@@ -17,10 +17,10 @@ class Productos {
 
 const carrito = []
 
-const producto1 = new Productos(`foco`,200);
-const producto2 = new Productos(`destornillador`,400);
-const producto3 = new Productos(`pinza`,500);
-const producto4 = new Productos(`martillo`,100);
+const producto1 = new Productos(`foco`,20.00);
+const producto2 = new Productos(`destornillador`,80.00);
+const producto3 = new Productos(`pinza`,40.00);
+const producto4 = new Productos(`martillo`,120.00);
 
 
 boton1.onclick = ()=>{
@@ -49,6 +49,7 @@ botonF.onclick = ()=>{
 
 function mostrarCarrito() {
     const h1 = document.createElement(`h1`)
+    h1.setAttribute(`id`,`h1`)
     h1.innerText = `CARRITO`
     divFinalDeCompra.append (h1)
 }
@@ -56,15 +57,16 @@ function mostrarCarrito() {
 function detallesCarrito() {
     carrito.forEach(element => {
         const parrafo = document.createElement(`p`)
+        parrafo.setAttribute(`id`,`parrafoC`)
         parrafo.innerText = `${element.nombre}:${element.precio}`
         divFinalDeCompra.append (parrafo)
     });
 }
 
-
 function totalCompra() {
     const total = carrito.reduce((num1,num2)=>(num1 + num2.precio),0)
     const parrafoTotal = document.createElement(`p`)
+    parrafoTotal.setAttribute(`id`,`parrafoTotal`)
     parrafoTotal.innerText = `el total de tu compra es de $${total}`
     divFinalDeCompra.append (parrafoTotal)   
 }
