@@ -1,0 +1,42 @@
+.divH1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3em;
+    span{
+        color: brown;
+    }
+}
+.div{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-top: 3em;
+    .card{
+        margin: 2em;
+    }
+}
+
+
+.boton{
+    border: none;
+}
+
+.divParrafo{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    font-weight: bold;
+    p{
+        border-bottom: solid;
+    }
+}
+
+.ultimoDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    #botonF{
+        border-radius: 2em;
+    }
+}
