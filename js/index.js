@@ -36,7 +36,6 @@ boton1.onclick = ()=>{
     toast.addEventListener('mouseleave', Swal.resumeTimer)
   }
 })
-
 Toast.fire({
   icon: 'success',
   title: 'agregando al carrito'
@@ -56,7 +55,6 @@ boton2.onclick = ()=>{
     toast.addEventListener('mouseleave', Swal.resumeTimer)
   }
 })
-
 Toast.fire({
   icon: 'success',
   title: 'agregando al carrito'
@@ -76,7 +74,6 @@ boton3.onclick = ()=>{
     toast.addEventListener('mouseleave', Swal.resumeTimer)
   }
 })
-
 Toast.fire({
   icon: 'success',
   title: 'agregando al carrito'
@@ -96,8 +93,7 @@ boton4.onclick = ()=>{
     toast.addEventListener('mouseleave', Swal.resumeTimer)
   }
 })
-
-Toast.fire({
+Toast.fire({  
   icon: 'success',
   title: 'agregando al carrito'
 })
@@ -151,3 +147,15 @@ function volver() {
   botonVolver.innerText = `Volver`
   divFinalDeCompra.append (botonVolver)
 }
+
+
+
+//PARA LA ENTREGA DE HOY
+
+let paraStorage ={
+  nombre: "joaquin",
+  apelldo: "Solar",
+  edad: 20,
+}
+
+localStorage.setItem("persona", JSON.stringify(paraStorage))
